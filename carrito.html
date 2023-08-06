@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="icon" href="./imgs/IconoPagina.png">
+    <link rel="stylesheet" href="estiloGeneral.css">
+    <link rel="stylesheet" href="estiloCarrito.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <script src="./js/Carrito.js" defer></script>
+    <script src="./js/agregarAlCarrito.js" defer></script>
+</head>
+<body>
+    <header class="hero">
+        <nav class="nav container" id="nav">
+            <div class="nav_logo">Productos</div>
+
+            <ul class="nav_links">
+                <li class="nav_item primero"><a href="carrito.html" class="nav_link">🛒<span id="contadorCarrito">0</span></a></li>
+                <!-- <li class="nav_item segundo"><a href="#" class="nav_link">Tecnologias</a></li>
+                <li class="nav_item tercero"><a href="#" class="nav_link">Sobre mi</a></li>
+                <li class="nav_item cuarto"><b><a href="#" class="nav_link">Contacto</a></b></li> -->
+            </ul>
+
+            <!-- <a href="#nav" class="nav_hamburguesa">
+                <img src="./imgs/Abrir.svg" class="nav_icon">
+            </a>
+
+            <a href="#" class="nav_close">
+                <img src="./imgs/Cerrar.svg" class="nav_icon">
+            </a> -->
+
+        </nav>
+    </header>
+    <main>
+        <p id="carritoVacio"> No hay productos en el carrito <a href="index.html"> Agregar Productos</a></p>
+        <section id="contenedorDeAmuletos"></section>
+        <section id="totales">
+            <p>Total Unidades: <span id="unidades">0</span></p>
+            <p>Total Precio: <span id="precio">0</span>$</p>
+            <button disabled>Comprar</button>
+            <button id="reiniciarCarrito">Reiniciar Carrito</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="contenedorDeColores">
+            <div class="color"></div>
+            <div class="color1"></div>
+            <div class="color2"></div>
+        </div>
+
+        <div class="derechos">
+        © 2022 Alexis Acevedo - Todos los Derechos Reservados.
+        </div>
+    </footer>
+</body>
+</html>

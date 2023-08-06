@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Acme', sans-serif;
+
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.hero{
+    background-size: cover;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    color: white;
+    z-index: 1;
+    font-family: 'Roboto', sans-serif;
+    background-color:#ffffff ;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.116);
+   
+   
+}
+.container{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+}
+
+.nav{
+    --state-close:scale(0);
+    --state-hamburguesa:scale(1);
+    --state-menu:translate(-100%);
+
+
+    padding: 40px 0;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(2, max-content);
+}
+.nav:target{
+    --state-menu:translate(0);
+    --state-hamburguesa:scale(0);
+    --state-close:scale(1);
+}
+.nav_logo{
+    font-size: 2rem;
+    z-index: 2;
+    color: #000;
+    font-family: 'Kanit', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.nav_link{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 2.3em;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+/* ======================== */
+#contadorCarrito{
+    border-radius: 100%;
+    display: inline-block;
+    aspect-ratio: 0.5;
+    color: rgb(0, 0, 0);
+    text-align: center;
+   
+    font-size: 25px;
+}
+
+
+.Divisor{
+    margin-top: 200px;
+}
+
+button{
+    background-color: skyblue;
+    padding: 6px;
+    font-size: 17px;
+    border: unset;
+    font-weight: bold;
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
+}
+h3,p{
+    margin: 6px;
+    font-style: italic;
+    font-family: 'Kanit', sans-serif;
+}
+h5{
+    margin: 10px;
+    font-size: 70px;
+}
+.displayNone{
+    display: none;
+}
+
+.footer{
+    text-align: center;
+    color: rgb(0, 0, 0);  
+    padding: 25px;
+    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.116);
+    margin-top: auto;
+}
+.derechos{
+    margin: 10px;
+    font-family: 'Kanit', sans-serif;
+}
+.contenedorDeColores{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.color{
+    height: 30px;
+    width: 50px;
+    background-color: skyblue;
+}
+.color1{
+    height: 30px;
+    width: 50px;
+    background-color: #ffffff;
+    border: #000 solid 0.5px;
+}
+.color2{
+    height: 30px;
+    width: 50px;
+    background-color: #000;
+}
+
+@media (min-width:768px){
+    .cartaAmuleto {
+        width:300px;
+    }
+    h5{
+        font-size: 110px;
+    }
+}

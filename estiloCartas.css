@@ -1,0 +1,30 @@
+#contenedorDeAmuletos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px;
+}
+.cartaAmuleto{
+    max-width: 400px;
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+    background-color:ghostwhite;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.268);
+    transition: 200ms; 
+}
+.cartaAmuleto:hover{
+   translate: 0 -10px;
+   box-shadow: 0 10px 5px rgba(0, 0, 0, 0.268);
+}
+.cartaAmuleto {
+    width:200px;
+    aspect-ratio: 1.5;
+    border-radius: 7px;
+}
+@media (min-width:768px){
+    .cartaAmuleto {
+        width:300px;
+    }
+}

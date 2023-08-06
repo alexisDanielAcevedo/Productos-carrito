@@ -1,0 +1,46 @@
+#contenedorDeAmuletos{
+    margin-top: 200px;
+    
+}
+
+.cartaAmuleto{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+#totales{
+    text-align: center;
+}
+.cartaAmuleto button{
+   color: black;
+   font-size: large;
+   font-weight: bold;
+   background-color: white;
+   text-align: center;
+   margin: 0;
+}
+#carritoVacio{
+    margin-top: 400px;
+    font-size: large;
+    text-align: center;
+}
+#carritoVacio a{
+   text-decoration: none;
+   color: skyblue;
+   font-weight: bolder;
+}
+@media (min-width:768px){
+    .cartaAmuleto{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .cartaAmuleto h3{
+     width: 100px;  
+    }
+}
